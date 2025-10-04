@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jenny Gipa — Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(900px 400px at 10% 10%, rgba(255,235,59,0.12), transparent 8%),
+                  linear-gradient(180deg, #f3eeae, #f3eeae 50%, #fffff0 100%);
+      color:#3e2f00; 
+      padding-bottom:60px;
+    }
+
+    /* Navigation */
+    .top-nav{
+      background:rgba(239, 238, 227, 0.95);
+      box-shadow:0 6px 18px rgba(251,192,45,0.15);
+      position:sticky;top:0;z-index:99
+    }
+    .nav-wrap{max-width:1000px;margin:0 auto;padding:10px 20px;display:flex;justify-content:center}
+    .nav{list-style:none;display:flex;gap:8px}
+    .nav a{
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:10px;
+      text-decoration:none;
+      color:#3e2f00; /* Darker nav text */
+      font-weight:600;
+      transition:all .18s
+    }
+    .nav a.active{color:#f9a825;border-bottom:3px solid #f9a825}
+    .nav a:hover{background:rgba(255,235,59,0.2)}
+
+    /* Main wrapper */
+    .wrap{max-width:1000px;margin:34px auto;padding:18px}
+
+    /* Cards */
+    .card{
+      background:#ffff;
+      border-radius:12px;
+      padding:26px;
+      box-shadow:0 18px 40px rgba(251,192,45,0.18);
+      margin-bottom:20px
+    }
+
+    /* Profile section */
+    .profile{display:flex;gap:26px;align-items:flex-start}
+    .avatar{width:160px;height:160px;border-radius:12px;object-fit:cover;border:4px solid #fff176}
+    .profile h2{color:#d58a12;margin-bottom:6px} /* Slightly darker yellow for headings */
+    .meta-list{margin-top:8px}
+    .meta-list div{margin-bottom:8px;color:#3e2f00} /* Dark text for meta info */
+    .desc{margin-top:10px;color:#3e2f00} /* Dark text for description */
+
+    /* Headings & boxes */
+    h3{color:#d58a12;margin-bottom:12px} /* Darker yellow for headings */
+    .box{
+      background:#ffff;
+      border-radius:10px;
+      padding:14px;
+      border-left:4px solid #ad7a28; /* Darker yellow border */
+    }
+    ul{margin-top:8px;padding-left:18px}
+    li{margin-bottom:6px;color:#3e2f00} /* Dark text for list items */
+
+    /* Responsive */
+    @media (max-width:720px){
+      .profile{flex-direction:column;align-items:center;text-align:center}
+      .avatar{width:140px;height:140px}
+    }
+  </style>
+</head>
+<body>
+  <header class="top-nav">
+    <div class="nav-wrap">
+      <ul class="nav" role="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="wrap" aria-labelledby="resume-title">
+    <article class="card" id="resume-card">
+      <section class="profile" aria-labelledby="name">
+        <img class="avatar" src="C:\Users\Jenny\Downloads\1759239835215.jpg" alt="Jenny Gipa">
+        <div>
+          <h2 id="name">Jenny D. Gipa</h2>
+          <div class="meta-list">
+            <div><strong>Age:</strong> 21</div>
+            <div><strong>Address:</strong> Bulan, Sorsogon, Philippines</div>
+            <div><strong>Course:</strong> Bachelor of Science in Information Systems</div>
+          </div>
+          <p class="desc"><strong>Description:</strong> Motivated Information Systems student who enjoys designing systems and helping with IT projects. Interested in using technology to make business work easier.</p>
+        </div>
+      </section>
+    </article>
+
+    <section class="card" aria-labelledby="education">
+      <h3 id="education">Education</h3>
+      <div class="box">
+        <strong>Bachelor of Science in Information Systems</strong><br>
+        <small>Sorsogon State University (Bulan Campus) — 2022 to Present</small>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="skills">
+      <h3 id="skills">Skills</h3>
+      <div class="box">
+        <ul>
+          <li><strong>Technical Writing & Documentation:</strong> Created clear and detailed project documentation, reports, and user guides.</li>
+          <li><strong>Basic Web Development:</strong> HTML & CSS — built personal portfolio</li>
+          <li><strong>Database Management:</strong> ERD design and basic SQL concepts</li>
+          <li><strong>Documentation & Research:</strong> Technical reports and project documentation</li>
+          <li><strong>Communication & Teamwork:</strong> Collaborated effectively with team members to produce high-quality deliverables.</li>
+        </ul>
+         </section>
+
+    <section class="card" aria-labelledby="experience">
+      <h3 id="experience">Experience</h3>
+      <div class="box">
+        <strong>CWTS – Civic Welfare Training Service</strong><br>
+        <small>Role: CWTS Student (NSTP)</small>
+        <ul>
+          <li>Participated in community outreach and development activities</li>
+          <li>Engaged with community members to encourage participation and cooperation</li>
+          <li>Supported initiatives that promoted health, safety, and community welfare</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
