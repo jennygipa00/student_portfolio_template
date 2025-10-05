@@ -12,14 +12,13 @@
       font-family: "Segoe UI", Roboto, Arial, sans-serif;
       background: radial-gradient(1200px 600px at 10% 10%, rgba(255,235,59,0.12), transparent 10%),
                   radial-gradient(1000px 500px at 90% 90%, rgba(255,193,7,0.10), transparent 10%),
-                  linear-gradient(180deg, #FEFBDD, #FEFBDD 50%, #FEFBDD 100%);
-      color:#3e2f00; /* Darker text */
+                  linear-gradient(180deg, #f4f0ca, #f4f0ca 50%, #f4f0ca 100%);
+      color:#3e2f00; 
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
       padding-bottom:60px;
     }
 
-    /* Top Navigation */
     .top-nav{
       width:100%;
       background:rgba(239, 238, 227, 0.95);
@@ -31,20 +30,20 @@
     }
     .nav-wrap{max-width:1000px;margin:0 auto;padding:10px 20px;display:flex;justify-content:center}
     .nav{list-style:none;display:flex;gap:8px}
-    .nav a{
+    .nav a {
       display:inline-block;
       padding:10px 18px;
       border-radius:10px;
       text-decoration:none;
-      color:#3e2f00; /* Darker nav text */
-      font-weight:600;
+      color:#3e2f00; 
       transition:all .18s ease;
       border-bottom:3px solid transparent;
-    }
+      font-weight:700;
+  }
+
     .nav a:hover{background:rgba(255,235,59,0.2)}
     .nav a.active{color:#f9a825;border-bottom-color:#f9a825}
 
-    /* Hero Section */
     .hero{
       max-width:920px;
       margin:48px auto;
@@ -54,15 +53,14 @@
       box-shadow:0 18px 40px rgba(251,192,45,0.18);
       text-align:center;
     }
-    .hero h1{font-size:2.4rem;color:#d58a12;margin-bottom:10px}
-    .hero span{color:#d58a12}
+    .hero h1{font-size:2.4rem;color:#9d6711;margin-bottom:10px}
+    .hero span{color:#9d6711}
     .hero p{color:#3e2f00;font-size:1.05rem;line-height:1.6;max-width:780px;margin:0 auto 18px}
 
-    /* Call-to-Action Buttons */
     .cta-row{margin-top:18px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
     .btn {
       background:#fbc02d;
-      color:#3e2f00; /* Darker button text */
+      color:#3e2f00; 
       padding:10px 18px;
       border-radius:10px;
       text-decoration:none;
@@ -72,10 +70,8 @@
     }
     .btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(251,192,45,0.4)}
 
-    /* Meta Text */
     .meta {margin-top:18px;color:#3e2f00;font-size:.95rem}
 
-    /* Responsive */
     @media (max-width:640px){
       .hero{padding:28px;margin:24px}
       .hero h1{font-size:1.6rem}

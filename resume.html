@@ -10,12 +10,11 @@
     body{
       font-family: "Segoe UI", Roboto, Arial, sans-serif;
       background: radial-gradient(900px 400px at 10% 10%, rgba(255,235,59,0.12), transparent 8%),
-                  linear-gradient(180deg, #FEFBDD, #FEFBDD 50%, #FEFBDD 100%);
+                  linear-gradient(180deg, #f4f0ca, #f4f0ca 50%, #f4f0ca 100%);
       color:#3e2f00; 
       padding-bottom:60px;
     }
 
-    /* Navigation */
     .top-nav{
       background:rgba(239, 238, 227, 0.95);
       box-shadow:0 6px 18px rgba(251,192,45,0.15);
@@ -25,20 +24,19 @@
     .nav{list-style:none;display:flex;gap:8px}
     .nav a{
       display:inline-block;
-      padding:10px 16px;
+      padding:10px 18px;
       border-radius:10px;
       text-decoration:none;
-      color:#3e2f00; /* Darker nav text */
-      font-weight:600;
-      transition:all .18s
+      color:#3e2f00; 
+      transition:all .18s ease;
+      border-bottom:3px solid transparent;
+      font-weight:700;
     }
     .nav a.active{color:#f9a825;border-bottom:3px solid #f9a825}
     .nav a:hover{background:rgba(255,235,59,0.2)}
 
-    /* Main wrapper */
     .wrap{max-width:1000px;margin:34px auto;padding:18px}
 
-    /* Cards */
     .card{
       background:#ffff;
       border-radius:12px;
@@ -47,26 +45,24 @@
       margin-bottom:20px
     }
 
-    /* Profile section */
     .profile{display:flex;gap:26px;align-items:flex-start}
-    .avatar{width:160px;height:160px;border-radius:12px;object-fit:cover;border:4px solid #fff176}
-    .profile h2{color:#d58a12;margin-bottom:6px} /* Slightly darker yellow for headings */
+    .avatar{width:160px;height:160px;border-radius:12px;object-fit:cover;border:4px solid #9d6711}
+    .profile h2{color:#9d6711;margin-bottom:6px} 
     .meta-list{margin-top:8px}
-    .meta-list div{margin-bottom:8px;color:#3e2f00} /* Dark text for meta info */
-    .desc{margin-top:10px;color:#3e2f00} /* Dark text for description */
+    .meta-list div{margin-bottom:8px;color:#3e2f00} 
+    .desc{margin-top:10px;color:#3e2f00} 
 
-    /* Headings & boxes */
-    h3{color:#d58a12;margin-bottom:12px} /* Darker yellow for headings */
+    h3{color:#9d6711;margin-bottom:12px}
     .box{
       background:#ffff;
       border-radius:10px;
       padding:14px;
-      border-left:4px solid #ad7a28; /* Darker yellow border */
+      border-left:4px solid #ad7a28; 
     }
     ul{margin-top:8px;padding-left:18px}
-    li{margin-bottom:6px;color:#3e2f00} /* Dark text for list items */
+    li{margin-bottom:6px;color:#3e2f00} 
 
-    /* Responsive */
+    
     @media (max-width:720px){
       .profile{flex-direction:column;align-items:center;text-align:center}
       .avatar{width:140px;height:140px}

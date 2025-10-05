@@ -9,13 +9,12 @@
     *{box-sizing:border-box;margin:0;padding:0}
     body{
       font-family:"Segoe UI", Roboto, Arial, sans-serif;
-      background: radial-gradient(900px 400px at 10% 10%, rgba(251,192,45,0.08), transparent 8%),
-           linear-gradient(180deg, #FEFBDD, #FEFBDD 50%, #FEFBDD 100%);
-      color:#3e2f00; /* Darker text */
-      padding-bottom:60px;
+      background:  radial-gradient(900px 400px at 10% 10%, rgba(255,235,59,0.12), transparent 8%),
+                  linear-gradient(180deg, #f4f0ca, #f4f0ca 50%, #f4f0ca 100%);
+      color:#3e2f00; 
+      padding-bottom:60px 0;
     }
 
-    /* Top Navigation */
     .top-nav{
       background:rgba(239, 238, 227, 0.95);
       box-shadow:0 6px 18px rgba(251,192,45,0.15);
@@ -28,19 +27,17 @@
       padding:10px 16px;
       border-radius:10px;
       text-decoration:none;
-      color:#3e2f00; /* Dark nav text */
-      font-weight:600
+      color:#3e2f00;
+      font-weight:700
     }
     .nav a.active{
       color:#f9a825;
       border-bottom:3px solid #f9a825
     }
 
-    /* Main Wrap + Grid */
     .wrap{max-width:1000px;margin:34px auto;padding:18px}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
 
-    /* Project Cards */
     .card{
       background:#ffff;
       border-radius:12px;
@@ -52,14 +49,13 @@
       transform:translateY(-6px);
       box-shadow:0 22px 46px rgba(251,192,45,0.25)
     }
-    .card h3{color:#d58a12;margin-bottom:8px}
-    .card p{color:#3e2f00} /* Darker project description */
+    .card h3{color:#9d6711;margin-bottom:8px}
+    .card p{color:#3e2f00} 
 
-    /* Tags */
     .tags{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
     .tag{
       background:#ffff;
-      color:#3e2f00; /* Dark tag text */
+      color:#3e2f00; 
       padding:6px 10px;
       border-radius:999px;
       font-weight:600;
@@ -81,7 +77,7 @@
   </header>
 
   <main class="wrap" aria-labelledby="projects-title">
-    <h2 id="projects-title" style="color:#d58a12;margin-bottom:18px">Selected Projects</h2>
+    <h2 id="projects-title" style="color:#9d6711;margin-bottom:18px">Selected Projects</h2>
 
     <div class="grid">
       <article class="card" aria-labelledby="p1">

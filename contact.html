@@ -9,12 +9,12 @@
     *{box-sizing:border-box;margin:0;padding:0}
     body{
       font-family:"Segoe UI", Roboto, Arial, sans-serif;
-      background: linear-gradient(180deg, #FEFBDD, #FEFBDD 50%, #FEFBDD 100%);
+      background: radial-gradient(900px 400px at 10% 10%, rgba(255,235,59,0.12), transparent 8%),
+                  linear-gradient(180deg, #f4f0ca, #f4f0ca 50%, #f4f0ca 100%);
 
       padding-bottom:60px;
     }
 
-    /* Top Navigation */
     .top-nav{
       background:rgba(239, 238, 227, 0.95);
       box-shadow:0 6px 18px rgba(251,192,45,0.15);
@@ -27,15 +27,14 @@
       padding:10px 16px;
       border-radius:10px;
       text-decoration:none;
-      color:#8d6e00;
-      font-weight:600
+      color:#3e2f00;
+      font-weight:700
     }
     .nav a.active{
       color:#f9a825;
       border-bottom:3px solid #f9a825
     }
 
-    /* Main Wrapper */
     .wrap{
       max-width:1000px;
       margin:34px auto;
@@ -45,23 +44,20 @@
       gap:20px
     }
 
-    /* Card */
     .card{
       background:#fff;
       border-radius:12px;
       padding:20px;
       box-shadow:0 18px 40px rgba(251,192,45,0.18)
     }
-    h2{color:#d58a12;margin-bottom:12px}
+    h2{color:#9d6711;margin-bottom:12px}
 
-    /* Contact Info */
     .contact-list{display:flex;flex-direction:column;gap:12px}
     .contact-row{display:flex;gap:12px;align-items:center;color:#5b4500}
     .contact-row i{font-size:1.05rem;width:22px;text-align:center;color:#f9a825}
     .contact-row a{color:#5b4500;text-decoration:none;font-weight:600}
     .contact-row a:hover{color:#fbc02d;text-decoration:underline}
 
-    /* Form */
     form{display:flex;flex-direction:column;gap:12px}
     label{font-weight:700;color:#5b4500}
     input,textarea{
@@ -92,7 +88,6 @@
       box-shadow:0 10px 30px rgba(251,192,45,0.3)
     }
 
-    /* Responsive */
     @media (max-width:880px){
       .wrap{grid-template-columns:1fr; padding:18px}
     }
@@ -133,8 +128,7 @@
             <strong>LinkedIn</strong>
             <div>
               <a href="https://www.linkedin.com/in/jenny-gipa-67020a364" 
-                 class="linkedin-link" 
-                 target="_blank">
+                 class="linkedin-link" >
                 linkedin.com/in/jenny-gipa
               </a>
             </div>
